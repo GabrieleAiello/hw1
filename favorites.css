@@ -1,0 +1,92 @@
+.favorites-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.favorite {
+    padding: 10px;
+    max-width: 100%;
+    text-align: center;
+    display:flex;
+    flex-direction: row;
+    border-bottom: 1px solid grey;
+    
+}
+
+.scarpa {
+    width: 18%;
+    height: auto;
+}
+
+.info-pref{
+    left: 3%;
+    position: relative;
+    font-size: 120%;
+}
+
+.info-pref p{
+    position: absolute;
+    left:0%;
+    top:70%;
+    font-weight: bold;
+}
+
+.info-pref .pDesc{
+    top:20%;
+    font-weight: 100;
+}
+
+#HomePage{
+    padding: 1%;
+    width: 23%;
+    margin-top: 2%;
+    position: relative;
+    left:37%;
+    font-size:20px;
+    border: 1px solid black;
+    border-radius: 15px;
+    text-decoration:none;
+    color:black;
+    text-align:center;
+}
+
+h1{
+    font-size: 32px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.img-preferito{ 
+    height: 70px;
+    margin-top: 6%;
+    transition: 0.5s;
+    right: 12%;
+    position: absolute;
+}
+    
+.img-preferito:hover{
+    cursor: pointer;
+}
+    
+.img-preferito:active{
+    transform: scale(0.6);
+}
+
+@media (max-width: 500px){
+
+    .img-preferito {
+        height: 5%;
+        margin-top: 5%;
+    }
+
+    h2{
+        display: contents;
+    }
+
+    .pPrice{
+        position: absolute !important;
+        top: 49% !important;
+    }
+
+
+}

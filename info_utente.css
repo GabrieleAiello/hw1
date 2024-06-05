@@ -1,0 +1,36 @@
+body{
+    display: flex;
+    justify-content: left;
+    font-size: x-large;
+    flex-direction: column;
+}
+
+tbody{
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+} 
+
+.text{
+    padding-left: 2px;
+}
+
+#HomePage{
+    padding: 1%;
+    width: 23%;
+    margin-top: 2%;
+    position: relative;
+    left:37%;
+    font-size:20px;
+    border: 1px solid black;
+    border-radius: 15px;
+    text-decoration:none;
+    color:black;
+    text-align:center;
+}
+
+@media (max-width: 500px){
+    #HomePage {
+        margin-top: 11%;
+    }
+}

@@ -1,0 +1,242 @@
+body {
+    padding-bottom: 140px; 
+}
+
+.cart-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-item {
+    padding: 10px;
+    max-width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid grey;
+}
+
+.scarpa {
+    width: 18%;
+    height: auto;
+}
+
+.info-cart {
+    left: 3%;
+    position: relative;
+}
+
+.info-cart p {
+    position: absolute;
+    left: 0%;
+    top: 70%;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.info-cart .pDesc {
+    top: 20%;
+    font-weight: 100;
+}
+
+h1 {
+    font-size: 32px;
+    padding-left: 4%;
+}
+
+.remove-cart-button {
+    font-size: 14px;
+    border-radius: 10px;
+    width: 15%;
+    padding: 10px;
+    position: absolute;
+    right: 16%;
+    margin-top: 7%;
+}
+
+
+.pQty {
+    top: 60% !important;
+}
+
+/*Cambio valuta*/
+#CurrencyExchange{
+    margin-top: 15px;
+    cursor: pointer;
+    width: 2%;
+    height: auto;
+    padding-bottom: 2%;
+}
+
+.CurrencyExchangeContainer{
+    display: none;
+    position: fixed;
+    top: 68%;
+    right: 33%;
+    background-color: var(--colore-sfondo);
+    width: 420px;
+    border: 2px solid black;
+    backdrop-filter: blur(15px);
+    color: black;
+    border-radius: 15px;
+    padding: 30px;
+    z-index: 2;
+}
+
+#topExchangeContainer{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+#topExchangeContainer img{
+    cursor: pointer;
+    margin-right:5% ;
+    margin-top: 15px;
+    width: 7%;
+}
+
+#topExchangeContainer{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+#topExchangeContainer p{
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center; 
+}
+  
+.ContainerPrincipale{
+    width: 100%;
+    display: flex;
+}
+  
+.ContainerPrincipale div{
+    width: 50%;
+    margin-bottom: 15px;
+}
+  
+select{
+    width: 95%;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    background: var(--colore-sfondo);
+    outline: none;
+    color: black;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+    
+}
+  
+.CurrencyExchangeContainer input{
+    background: lightgray;
+    width: 75%;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 12px;
+}
+  
+.Exchange-btn{
+    cursor: pointer;
+    width: 40%;
+    height: 40px;
+    background: black;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+#Acquista-btn{
+    display: flex;
+    background-color: grey;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    border-radius: 10px;
+    width: 17%;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    border: none;
+    height: 50px;
+    margin-bottom: 5%;
+}
+
+#HomePage {
+    padding: 1%;
+    width: 23%;
+    margin-top: 2%;
+    position: relative;
+    left: 70%;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 15px;
+    text-decoration: none;
+    color: black;
+    text-align: center;    
+}
+
+@media (max-width: 500px){
+
+    .info-cart p {
+        top: 60%;
+        font-size: 14px;
+    }
+    
+    .pQty {
+        top: 40% !important;
+    }
+
+    h2{
+        font-size: 20px;
+        display: contents;
+    }
+
+    .remove-cart-button {
+        margin-top: 1%;
+    }
+
+    .info-cart .pDesc {
+        display: none;
+    }
+
+    #Acquista-btn {
+        width: 30%;
+        font-size: 18px;
+        height: 65px;
+    }
+
+    .cart-item {
+        padding-bottom: 20px;
+        margin-top: 10px;
+    }
+
+    #CurrencyExchange{
+        width: 8%;
+    }
+
+    #HomePage {
+        position: absolute; 
+    }
+
+    .CurrencyExchangeContainer{
+        top: 10%;
+        right: 4%;
+        width: 400px;
+    }
+}
+
